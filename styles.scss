@@ -1,0 +1,75 @@
+body{
+    background-color: grey;
+}
+.button-container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    column-gap: 200px;
+    row-gap: 50px;
+    justify-content: center;
+
+    .btn-1{
+    padding: 20px 30px;
+    color: white;
+    background: black;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+    }
+    .btn-1:hover{
+    color: black;
+    background: white;
+    }
+    .btn-2{
+        padding: 20px 30px;
+        color: purple;
+        background-color: rgb(4, 236, 225);
+        border: none;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+    .btn-2:hover{
+        height: 5%;
+    }
+    .btn-3{
+        padding: 20px 30px;
+        transition: .5s ease;
+        animation-name: btn-3;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+        animation-timing-function: ease-in-out;
+        background-color: white;
+        animation-direction: alternate;
+    }
+    .btn-3:hover::after{
+        @keyframes btn-3 {
+            0%{
+                color: blue;
+                background-color: red;
+            }
+            50%{
+                color: green;
+                background-color: yellow;
+            }
+            75%{
+                color: white;
+                background-color: black;
+                animation-timing-function: ease-out;
+            }
+            100%{
+                color: red;
+                background-color: orange;
+            }
+        }
+    }
+    .btn-4{
+        padding: 20px 30px;
+    }
+    .btn-5{
+        padding: 20px 30px;
+    }
+    .btn-6{
+        padding: 20px 30px;
+    }
+}
