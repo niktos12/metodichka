@@ -5,16 +5,555 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>metodichka</title>
     <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&family=Marcellus&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&family=Marcellus&family=Montserrat&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="button-container">
-        <button class="btn-1">Click</button>
-        <button class="btn-2">Click</button>
-        <button class="btn-3">Click</button>
-        <button class="btn-4">Click</button>
-        <button class="btn-5">Click</button>
-        <button class="btn-6">Click</button>
-    </div>
     
+    <aside class="nav-aside">
+        <ul class="ul-aside">
+            <li class="li-aside"><a href="#base" class="a-li-aside">HTML и базовая структура</a></li>
+            <li class="li-aside"><a href="#tegs" class="a-li-aside">Различные теги HTML</a></li>
+            <li class="li-aside"><a href="#writing" class="a-li-aside">Текстовые теги</a></li>
+            <li class="li-aside"><a href="#lists" class="a-li-aside">Списки</a></li>
+            <li class="li-aside"><a href="#btns" class="a-li-aside">Кнопки , поля ввода , чекбоксы</a></li>
+            <li class="li-aside"><a href="#container" class="a-li-aside">Контейнеры</a></li>
+            <li class="li-aside"><a href="#media" class="a-li-aside">Медиа теги</a></li>
+            <li class="li-aside"><a href="#styles" class="a-li-aside">Стили (CSS)</a></li>
+            <li class="li-aside"><a href="#" class="a-li-aside">HTML и базовая структура</a></li>
+            <!-- <li class="li-aside"><a href="#" class="a-li-aside">HTML и базовая структура</a></li> -->
+        </ul>
+    </aside>
+    <main class="main-content container">
+        <h1 class="h1-header">Методичка фронтенда</h1>
+        <h2 class="h2-main" id="base">HTML и базовая структура</h2>
+        <p class="p-main">Основная структура HTML документа выглядит следующим образом:</p>
+        <code>
+            <pre class="code-main">
+                <span class="code">
+    &lt!DOCTYPE html&gt
+    &lthtml lang="en"&gt
+    &lthead&gt
+    &ltmeta charset="UTF-8"&gt
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+    &lttitle>Document&lt/title&gt
+    &lt/head&gt
+    &ltbody&gt
+    &lt/body&gt
+    &lt/html&gt</span>
+            </pre>
+        </code>
+        <p class="code-p">Тег <code>&lt!DOCTYPE html&gt</code> определяет тип документа <code>html</code>, а тег <code>&lthtml lang="en"&gt</code> определяет язык <code>en</code>.</p>
+        <p class="code-p">Тег <code>&ltmeta charset="UTF-8"&gt</code> определяет кодировку символов в HTML документе.</p>
+        <p class="code-p">Тег <code>&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt</code> определяет размер окна браузера.</p>
+        <p class="code-p">Тег <code>&lttitle>Document&lt/title&gt</code> определяет заголовок документа.</p>
+        <p class="code-p">Тег <code>&lt/head&gt</code> определяет заголовок документа.</p>
+        <p class="code-p">Тег <code>&ltbody&gt</code> определяет содержание документа.</p>
+        <p class="code-p">Тег <code>&lt/html&gt</code> определяет конец документа.</p>
+        <p class="code-p">Существует еще тег <code>&ltlink/&gt</code> и <code>&ltscript/&gt</code>.</p>
+        <p class="code-p">Тег <code>&ltlink/&gt</code> это тег , который позволяет связывать документ HTMl с CSS документом, в котором хранятся стили.</p>
+        <p class="code-p">Также этот тег позволяет добавлять различные шрифты в документ.</p>
+        <p class="code-p">Тег <code>&ltscript/&gt</code> это тег , который позволяет связывать документ HTMl с JavaScript документом.</p>
+        <h2 class="h2-main" id="tegs">Различные теги HTML</h2>
+        <p class="p-main">В HTML документе представлены следующие теги:</p>
+        <code class="code-main">
+            <pre class="code-main">
+                <span class="code">
+    &lth1>Hello, World!&lt/h1&gt
+    &lth2>Hello, World!&lt/h2&gt
+    &lth3>Hello, World!&lt/h3&gt
+    &lth4>Hello, World!&lt/h4&gt
+    &lth5>Hello, World!&lt/h5&gt
+    &lth6>Hello, World!&lt/h6&gt
+    &ltp>Hello, World!&lt/p&gt
+                </span>
+            </pre>
+        </code>
+        <p class="code-p">Тег <code>&lth1>Hello, World!&lt/h1&gt</code> определяет заголовок первого уровня.</p>
+        <h1>Hello, World!</h1>
+        <p class="code-p">Тег <code>&lth2>Hello, World!&lt/h2&gt</code> определяет заголовок второго уровня.</p>
+        <h2>Hello, World!</h2>
+        <p class="code-p">Тег <code>&lth3>Hello, World!&lt/h3&gt</code> определяет заголовок третьего уровня.</p>
+        <h3>Hello, World!</h3>
+        <p class="code-p">Тег <code>&lth4>Hello, World!&lt/h4&gt</code> определяет заголовок четвертого уровня.</p>
+        <h4>Hello, World!</h4>
+        <p class="code-p">Тег <code>&lth5>Hello, World!&lt/h5&gt</code> определяет заголовок пятого уровня.</p>
+        <h5>Hello, World!</h5>
+        <p class="code-p">Тег <code>&lth6>Hello, World!&lt/h6&gt</code> определяет заголовок шестого уровня.</p>
+        <h6>Hello, World!</h6>
+        <p class="code-p">Тег <code>&ltp>Hello, World!&lt/p&gt</code> определяет параграф.</p>
+        <p>Hello, World!</p>
+        <h2 class="h2-main" id="writing">Текстовые теги</h2>
+        <p class="p-main">Текстовые теги позволяют добавлять текст в HTML документ.</p>
+        <code class="code-main">
+            <pre class="code-main">
+                <span class="code">
+    &ltstrong>Hello, World!&lt/strong&gt
+    &ltem>Hello, World!&lt/em&gt
+    &lti>Hello, World!&lt/i&gt
+    &ltu>Hello, World!&lt/u&gt
+    &ltb>Hello, World!&lt/b&gt
+    &lts>Hello, World!&lt/s&gt
+    &ltq>Hello, World!&lt/q&gt
+    &ltp>&ltspan>H&lt/span&gtello, World!&lt/p&gt
+    &lta>Hello, World!&lt/a&gt
+    &ltcode>Hello, World!&lt/code&gt
+                </span>
+            </pre>
+        </code>
+        <p class="code-p">Тег <code>&ltstrong>Hello, World!&lt/strong&gt</code> определяет жирный текст.</p>
+        <strong>Hello, World!</strong>
+        <p class="code-p">Тег <code>&ltem>Hello, World!&lt/em&gt</code> определяет курсив текст.</p>
+        <em>Hello, World!</em>
+        <p class="code-p">Тег <code>&lti>Hello, World!&lt/i&gt</code> определяет наклонный текст.</p>
+        <i>Hello, World!</i>
+        <p class="code-p">Тег <code>&ltu>Hello, World!&lt/u&gt</code> определяет текст подчеркнутый.</p>
+        <u>Hello, World!</u>
+        <p class="code-p">Тег <code>&ltb>Hello, World!&lt/b&gt</code> определяет текст жирный.</p>
+        <b>Hello, World!</b>
+        <p class="code-p">Тег <code>&lts>Hello, World!&lt/s&gt</code> определяет текст зачеркнутый.</p>
+        <s>Hello, World!</s>
+        <p class="code-p">Тег <code>&ltq>Hello, World!&lt/q&gt</code> определяет текст как цитату</p>
+        <q>Hello, World!</q>
+        <p class="code-p">Тег <code>&ltspan>H&lt/span&gt охватывает часть текста для выделения конкретных букв или выражений, например: поменять цвет</code></p>
+        <p class="code-p"><span class="span-main">H</span>ello, World!</p>
+        <p class="code-p">Тег <code>&lta>Hello, World!&lt/a&gt</code> определяет ссылку. Если нажать на текст ниже, то вас отправит на страницу ютуба</p>
+        <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Hello, World!</a></p>
+        <p class="code-p">Тег <code>&ltcode>Hello, World!&lt/code&gt</code> определяет код</p>
+        <p class="code-p"><code class="code-main"><span class="code"> Hello, World!</span></code></p>
+        <h2 class="h2-main" id="lists">Списки</h2>
+        <p class="code-p">Есть еще теги позволяющие делать различные списки.</p>
+        <code class="code-main">
+            <pre class="code-main">
+                <span class="code">
+    &ltol&gt
+        &ltli>Hello, World!&lt/li&gt
+        &ltli>Hello, World!&lt/li&gt
+    &lt/ol&gt
+                </span>
+            </pre>
+        </code>
+        <p class="code-p">Тег <code>&ltol&gt</code> определяет список.</p>
+        <ol>
+            <li>Hello, World!</li>
+            <li>Hello, World!</li>
+        </ol>
+        <p class="code-p">Тег <code>&ltli>Hello, World!&lt/li&gt</code> определяет элемент списка.</p>
+        <li>Hello, World!</li>
+        <li>Hello, World!</li>
+        <p class="code-p">А вот так будет выглядеть список который вместо цифр будет стоять точка</p>
+        <code class="code-main">
+            <pre class="code-main">
+                <span class="code">
+    &ltul&gt
+        &ltli>Hello, World!&lt/li&gt
+        &ltli>Hello, World!&lt/li&gt
+    &lt/ul&gt
+                </span>
+            </pre>
+        </code>
+        <p class="code-p">Тег <code>&ltul&gt</code> определяет список.</p>
+        <ul>
+            <li>Hello, World!</li>
+            <li>Hello, World!</li>
+        </ul>
+        <h2 class="h2-main" id="btns">Кнопки , поля ввода , чекбоксы</h2>
+        <code class="code-main">
+            <pre class="code-main">
+                <span class="code">
+    &ltbutton>Hello, World!&lt/button&gt
+    &ltinput>&lt/input&gt
+    &ltcheckbox>Hello, World!&lt/checkbox&gt
+                </span>
+            </pre>
+        </code>
+        <p class="code-p">Тег <code>&ltbutton&gt</code> определяет кнопку.</p>
+        <button>click me</button>
+        <p class="code-p">Тег <code>&ltinput></code> определяет поле ввода</p>
+        <input></input>
+        <p class="code-p">Тег <code>&ltcheckbox>Hello, World!&lt/checkbox&gt</code> определяет чекбокс</p>
+        <input type="checkbox">Hello, World!</input>
+        <h2 class="h2-main" id="container">Контейнеры</h2>
+        <p class="code-p">В HTML сущетсвуют контейнеры с помощью которых можно группировать другие элементы.</p>
+        <code class="code-main">
+            <pre class="code-main">
+                <span class="code">
+                    &ltdiv>
+                        &ltp>Hello, World!&lt/p>
+                        &lta>Hello, World!&lt/a>
+                    &lt/div>
+                </span>
+            </pre>
+                
+        </code>
+        <p class="code-p">Тег <code>&ltdiv></code> определяет контейнер</p>
+        <div>
+            <p>Hello, World!</p>
+            <a href="#">Hello, World!</a>
+        </div>
+        <p class="code-p">Также есть похожий тег-контейнер:</p>
+        <code class="code-main">
+            <pre class="code-main">
+                <span class="code">
+                    &ltsection>
+                        &ltp>Hello, World!&lt/p>
+                        &lta>Hello, World!&lt/a>
+                    &lt/section>
+                </span>
+            </pre>
+        </code>
+        <p class="code-p">Тег <code>&ltsection></code> определяет контейнер</p>
+        <section>
+            <p>Hello, World!</p>
+            <a href="#">Hello, World!</a>
+        </section>
+        <p class="code-p">Есть теги , которые позволяют структурировать сайт.Структура такая:</p>
+        <code class="code-main">
+            <pre class="code-main">
+                <span class="code">
+                    &ltheader>
+                        &ltp>Hello, World!&lt/p>
+                        &lta>Hello, World!&lt/a>
+                    &lt/header>
+                    &ltmain>
+                        &ltp>Hello, World!&lt/p>
+                        &lta>Hello, World!&lt/a>
+                    &lt/main>
+                    &ltfooter>
+                        &ltp>Hello, World!&lt/p>
+                        &lta>Hello, World!&lt/a>
+                    &lt/footer>
+                </span>
+            </pre>
+        </code>
+        <p class="code-p">Тег <code>&ltheader></code> определяет шапку сайта</p>
+        <header>
+            <p>Hello, World!</p>
+            <a href="#">Hello, World!</a>
+        </header>
+        <p class="code-p">Тег <code>&ltmain></code> определяет основной контент</p>
+        <main>
+            <p>Hello, World!</p>
+            <a href="#">Hello, World!</a>
+        </main>
+        <p class="code-p">Тег <code>&ltfooter></code> определяет подвал</p>
+        <footer>
+            <p>Hello, World!</p>
+            <a href="#">Hello, World!</a>
+        </footer>
+        <h2 class="h2-main" id="media">Медиа теги</h2>
+        <p class="code-p">В HTML есть теги, которые позволяют вставлять изображения, видеоролики и т.д. Вот примеры тегов:</p>
+        <code class="code-main">
+            <pre class="code-main">
+                <span class="code">
+    &ltimg src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp_LRmcF1kUi0aXquP0S8o32jmQ1pHBnwTmQ&usqp=CAU" alt="Hello, World!">
+    // src - это ссылка на изображение и alt - это описание изображения , если картинка по какой-то причине не грузится/пропала
+    &ltvideo src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" controls>&lt/video>
+    // можно заметить интересный параметр controls, если он включен, то браузер отобразит элементы управления
+    &ltaudio src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" controls>&lt/audio>
+    // тег audio производит звук если нажать на кнопку воспроизведения
+    &ltsvg src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp_LRmcF1kUi0aXquP0S8o32jmQ1pHBnwTmQ&usqp=CAU" alt="Hello, World!">
+    // тег svg, который описывает графику с помощью XML-разметки,и для отображения  графики внутри SVG
+                </span>
+            </pre>
+        </code>
+        <p class="code-p">И вот как все это выглядит:</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp_LRmcF1kUi0aXquP0S8o32jmQ1pHBnwTmQ&usqp=CAU" alt="Hello, World!">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EEvopkbc4FE?si=Putkr29tyvYwrkeZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen showinfo=0 modestbranding=1 class="wide-putin"></iframe>
+        <audio src="better-call-saul-intro-made-with-Voicemod-technology.mp3" controls></audio>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+            <circle cx="50" cy="50" r="40" fill="blue" />
+          </svg>
+        <h2 class="h2-main" id="styles">Стили (CSS)</h2>
+        <p class="code-p">Чтобы как-либо преобразовать текст или что-нибудь другое в HTML документе, можно использовать стили CSS.</p>
+        <p class="code-p">Разберем пример смены текста у тега &ltp&gt</p>
+        <code class="code-main">
+            <pre class="code-main">
+                <span class="code">
+    HTML:
+    &ltp>Hello, World!&lt/p> //Чтобы сменить текст в теге &ltp&gt нам потребуется атрибут class
+    &ltp class="text-main">Hello, World!&lt/p> // задаем класс и теперь в css документе можно использовать этот класс и сменить цвет
+    CSS:
+    .text-main {
+        color: blue;
+    } //Готово,теперь цвет текста будет синим
+                </span>
+            </pre>
+        </code>
+        <p class="code-blue">Hello, World!</p>
+        <p class="code-p">Допустим, мы хотим поменять размер шрифта, но мы не знаем как это сделать. Вот теперь пример смены размера текста:</p>
+        <code class="code-main">
+            <pre class="code-main">
+                <span class="code">
+    HTML:
+    &ltp class='font-change'>Hello, World!&lt/p> //Создаем класс font-change
+    CSS:
+    .font-change {
+        font-size: 24px; //Задаем размер шрифта с помощью font-size : 24px; //24px - это пиксели(в нашем случае 24 пикселя)
+    }
+                </span>
+            </pre>
+        </code>
+        <p class="code-font">Hello, World!</p>
+        <p class="code-p">Теперь такая ситуация, например, мы хотим шрифт текста другим.Что нужно для этого сделать?</p>
+        <p class="code-p">Первым делом, нужно зайти на Google Fonts и найти шрифт, который нам понравится.</p>
+        <p class="code-p">Далее, нам нужно выбрать стиль шрифта(тут тоже на ваш выбор).</p>
+        <p class="code-p">После того как вы выбрали шрифт, нужно нажать на значок плюсика и у вас откроется справа перечень всего</p>
+        <p class="code-p">Нас интересует строчки Use on the web</p>
+        <p class="code-p">Далее выбираем радиокнопку с надписью &ltlink&gt и снизу в окошке появляется код</p>
+        <p class="code-p">Мы копируем этот код и вставляем в HTML документ(в теге &ltlink&gt, который должен находиться в теге &lthead&gt)</p>
+        <p class="code-p">Теперь мы начнём менять шрифт</p>
+        <code class="code-main">
+            <pre class="code-main">
+                <span class="code">
+    HTML:
+    &ltp class='another-font'>Hello, World!&lt/p>
+    CSS:
+    .another-font{
+        font-family: 'Roboto', sans-serif; //Я привел пример с шрифтом Roboto, вместо Roboto вы можете вставить свой шрифт
+        //С помощью font-family мы можем менять сам шрифт
+    }
+                </span>
+            </pre>
+                
+        </code>
+        <p class="code-another">Hello, World!</p>
+        <p class="code-p">Все эти стили можно применять практически к любому тегу(например, &lth1&gt, &lth2&gt... , к спискам и т.д)</p>
+        <p class="code-p">Стили для контейнеров:</p>
+        <p class="code-p">Все эти стили можно применять практически к любому тегу(например, &ltdiv&gt, &ltfooter&gt и т.д.)</p>
+        <p class="code-p">Например: нам нужно , чтобы все элементы в контейнере находились по центру</p>
+        <code class="code-main">
+            <pre class="code-main">
+                <span class="code">
+    HTML:
+    &ltdiv class='center'>
+        &ltp>Hello, World!&lt/p>
+        &lta>Hello, World!&lt/a>
+    &lt/div>
+    CSS:
+    .center {
+        display: flex; //это позволит нам использовать элементы flex(т.е. сможем выравнить элементы по центру)
+        align-items: center; //выравниваем элементы по центру
+        flex-direction:column; //выравниваем элементы по вертикали
+    }
+                </span>
+            </pre>
+        </code>
+        <div class="code-center">
+            <p>Hello, World!</p>
+            <a>Hello, World!</a>
+        </div>
+        <p class="code-p">Еще для контейнеров можно сделать свой фоновый цвет(background)</p>
+        <p class="code-p">Например:</p>
+        <code class="code-main">
+            <pre class="code-main">
+                <span class="code">
+    HTML:
+    &ltdiv class='background'>
+        &ltp>Hello, World!&lt/p>
+        &lta>Hello, World!&lt/a>
+    &lt/div>
+    CSS:
+    .background {
+        background-color: red; //делаем фоновый цвет красный
+    }
+                </span>
+            </pre>
+        </code>
+        <div class="code-background-red">
+            <p>Hello, World!</p>
+            <a>Hello, World!</a>
+        </div>
+        <p class="code-p">Типы полей для ввода:</p>
+        <div class="types-input">
+            <div class="type-input">
+                 <input type="button" value="Кнопка">
+                 <p class="code-p">Это &ltinput type="button"&gt , т.е. кнопка</p>
+            </div>
+            <div class="type-input">
+                <input type="checkbox">
+                <p class="code-p">Это &ltinput type="checkbox"&gt , т.е. чекбокс</p>
+            </div>
+            <div class="type-input">
+                <input type="color">
+                <p class="code-p">Это &ltinput type="color"&gt , т.е. палитра цветов</p>
+            </div>
+            <div class="type-input">
+                <input type="date">
+                <p class="code-p">Это &ltinput type="date"&gt , т.е. календарь</p>
+            </div>
+            <div class="type-input">
+                <input type="datetime-local">
+                <p class="code-p">Это &ltinput type="datetime-local"&gt , т.е. календарь с точным временем</p>
+            </div>
+            <div class="type-input">
+                <input type="email">
+                <p class="code-p">Это &ltinput type="email"&gt , т.е. электронная почта</p>
+            </div>
+            <div class="type-input">
+                <input type="file">
+                <p class="code-p">Это &ltinput type="file"&gt , т.е. файл</p>
+            </div>
+            <div class="type-input">
+                <input type="hidden">
+                <p class="code-p">Это &ltinput type="hidden"&gt , т.е. спрятанный текст</p>
+            </div>
+            <div class="type-input">
+                <input type="image">
+                <p class="code-p">Это &ltinput type="image"&gt , т.е. изображение</p>
+            </div>
+            <div class="type-input">
+                <input type="month">
+                <p class="code-p">Это &ltinput type="month"&gt , т.е. календарь с выбором месяца</p>
+            </div>
+            <div class="type-input">
+                <input type="number">
+                <p class="code-p">Это &ltinput type="number"&gt , т.е. поле ввода только для чисел</p>
+            </div>
+            <div class="type-input">
+                <input type="password">
+                <p class="code-p">Это &ltinput type="password"&gt , т.е. это поле ввода, в котором весь написанный туда текст , будет заменен звездочками</p>
+            </div>
+            <div class="type-input">
+                <input type="radio">
+                <p class="code-p">Это &ltinput type="radio"&gt , т.е. input , который похож на чекбокс</p>
+            </div>
+            <div class="type-input">
+                <input type="range">
+                <p class="code-p">Это &ltinput type="range"&gt , т.е. можно установить диапазон</p>
+            </div>
+            <div class="type-input">
+                <input type="reset" value="Reset">
+                <p class="code-p">Это &ltinput type="reset"&gt , т.е. кнопка, которая сбразывает все данные в форме</p>
+            </div>
+            <div class="type-input">
+                <input type="search">
+                <p class="code-p">Это &ltinput type="search"&gt , т.е. поле ввода для запроса</p>
+            </div>
+            <div class="type-input">
+                <input type="submit">
+                <p class="code-p">Это &ltinput type="submit"&gt , т.е. кнопка, которая отправляет данные</p>
+            </div>
+            <div class="type-input">
+                <input type="tel">
+                <p class="code-p">Это &ltinput type="tel"&gt , т.е. поле ввода, в котором можно вводить номер телефона</p>
+            </div>
+            <div class="type-input">
+                <input type="text">
+                <p class="code-p">Это &ltinput type="text"&gt , т.е. поле ввода, в котором можно вводить текст и цифры</p>
+            </div>
+            <div class="type-input">
+                <input type="time">
+                <p class="code-p">Это &ltinput type="time"&gt , т.е. календарь с выбором времени(часы и минуты)</p>
+            </div>
+            <div class="type-input">
+                <input type="url">
+                <p class="code-p">Это &ltinput type="url"&gt , т.е. поле ввода для ссылки</p>
+            </div>
+            <div class="type-input">
+                <input type="week">
+                <p class="code-p">Это &ltinput type="week"&gt , т.е. календарь с выбором недели</p>
+            </div>
+        </div>
+        <p class="code-p">Вернемся к display:flex</p>
+        <p class="code-p">Представим ситуацию, когда мы хотим в нашем контейнере поместить все элементы в строчку или столбик</p>
+        <p class="code-p">Вот способ реализации этого:</p>
+        <code class="code-main">
+            <pre class="code-main">
+                <span class="code">
+    HTML:
+    &ltdiv class='flex'>
+        &ltp>Hello, World!&lt/p>
+        &lta>Hello, World!&lt/a>
+    &lt/div>
+    CSS:
+    .flex {
+        display: flex;
+        align-items: center;
+        flex-direction: column; //наши элементы будут выстроены в столбик
+        // есть другое значение: row; //наши элементы будут выстроены в строчку
+        // есть другое значение: row-reverse; //наши элементы будут выстроены в строчку в обратном порядке
+        // есть другое значение: column-reverse; //наши элементы будут выстроены в столбик в обратном порядке
+    }
+                </span>
+            </pre>
+        </code>
+        <div class="flex-column">
+            <p class="code-p">Hello, World!</p>
+            <a class="code-p" href="#">Hello, World!</a>
+        </div>
+        <p class="code-p">А если мы хотим поместить наши элементы в строчку?</p>
+        <p class="code-p">Можно просто использовать flex-direction: row</p>
+        <p class="code-p">Результат:</p>
+        <div class="flex-row">
+            <p class="code-p">Hello, World!</p>
+            <a class="code-p" href="#">Hello, World!</a>
+        </div>
+        <p class="code-p">Если мы хотим поместить наши элементы в строчку в обратном порядке, то мы можем использовать flex-direction: row-reverse</p>
+        <p class="code-p">Результат:</p>
+        <div class="flex-row-reverse">
+            <p class="code-p">Hello, World!</p>
+            <a class="code-p" href="#">Hello, World!</a>
+        </div>
+        <p class="code-p">Если мы хотим поместить наши элементы в столбик в обратном порядке, то мы можем использовать flex-direction: column-reverse</p>
+        <p class="code-p">Результат:</p>
+        <div class="flex-column-reverse">
+            <p class="code-p">Hello, World!</p>
+            <a class="code-p" href="#">Hello, World!</a>
+        </div>
+        <p class="code-p">Как создать красивую рамку для контейнера и сделать ее закругленной?</p>
+        <code class="code-main">
+            <pre class="code-main">
+                <span class="code">
+    HTML:
+    &ltdiv class='border'>
+        &ltp>Hello, World!&lt/p>
+        &lta>Hello, World!&lt/a>
+    &lt/div>
+    CSS:
+    .border {
+        border: 1px solid red; //Делаем рамку , которая будет иметь высоту 1px и покрасим её в красный, а параметр solid рисует рамку сплошной линией
+        border-radius: 5px; //Закругляем рамку на 5px 
+    }
+                </span>
+            </pre>
+        </code>
+        <p class="code-p">Результат:</p>
+        <div class="border-red">
+            <p class="code-p">Hello, World!</p>
+            <a class="code-p" href="#">Hello, World!</a>
+        </div>
+        <p class="code-p">Текст немного смещен в рамку, чтобы это исправить можно использовать padding или margin</p>
+        <p class="code-p">В чем же их различие?Падинги (свойство padding ) — это внутренние отступы от границ элемента до его содержимого. Маржины (свойство margin ) — это внешние отступы от границ элемента до соседних элементов</p>
+        <p class="code-p">Сделаем отступы для текста</p>
+        <code class="code-main">
+            <pre class="code-main">
+                <span class="code">
+    HTML:
+    &ltdiv class='border'>
+        &ltp>Hello, World!&lt/p>
+        &lta>Hello, World!&lt/a>
+    &lt/div>
+    CSS:
+    .border {
+        padding: 5px; //внутренние отступы от границ элемента до его содержимого
+        margin: 5px; //внешние отступы от границ элемента до соседних элементов
+        border: 1px solid red;
+        border-radius: 5px;
+    }
+                </span>
+            </pre>
+        </code>
+        <p class="code-p">Результат:</p>
+        <div class="border-red-padding">
+            <p class="code-p">Hello, World!</p>
+            <a class="code-p" href="#">Hello, World!</a>
+        </div>
+        <p class="code-p">Теперь текст немного сместился и стало приятнее на него смотреть</p>
+    </main>
 </body>
 </html>
