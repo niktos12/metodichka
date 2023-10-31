@@ -4,8 +4,14 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 .container{
-    margin: 0 auto;
-    width: 1200px;
+    // margin: 0 auto;
+    // margin-right: -200px;
+    width: 1600px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    // text-align: center;
 }
 header{
     // max-width: 500px;
@@ -45,6 +51,7 @@ header{
                 text-decoration: none;
                 transition: .5s ease;
                 font-size: 18px;
+                color: #000;
                 
             }
             .a-li-aside:hover{
@@ -69,11 +76,12 @@ header{
     font-size: 16px;
 }
 .main-content{
+    max-width: 100%;
+    margin-left: 200px;
     .h2-main{
         text-align: center;
     }
     .wide-putin{
-        // display: none;
         .ytp-title-link { display: none; } /* Скрыть заголовок */
         .ytp-delegate-text { display: none; }
     }
